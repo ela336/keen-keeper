@@ -9,6 +9,8 @@ import Home from './home/Home.jsx';
 import Frienddetails from './frienddetails/Frienddetails.jsx';
 import Timeline from './timeline/Timeline.jsx';
 import Status from './status/Status.jsx';
+import Friendcontext from './Context/Friendcontext.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -16,9 +18,10 @@ const router = createBrowserRouter([
     Component: Mainlayout,
     children: [
       { index: true, Component:Home },
-      { path: "details", Component:Frienddetails},
+      { path: "/details/:id", Component:Frienddetails},
       { path: "timeline", Component:Timeline},
       { path: "status", Component:Status},
+      
      
     ],
   },
@@ -26,6 +29,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-     <RouterProvider router={router} />
+    <Friendcontext>
+      <RouterProvider router={router} />
+    </Friendcontext>
+     
   </StrictMode>,
 )

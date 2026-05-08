@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Mitchell",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "sarah.mitchell@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "best friend"],
+    "bio": "Met during university orientation. We still travel together every summer.",
+    "goal": 14,
+    "next_due_date": "2026-05-14"
+  },
+  {
+    "id": 2,
+    "name": "Daniel Carter",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "daniel.carter@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "gym buddy"],
+    "bio": "Former coworker who introduced me to fitness and weekend cycling.",
+    "goal": 10,
+    "next_due_date": "2026-05-13"
+  },
+  {
+    "id": 3,
+    "name": "Emily Rodriguez",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "emily.rodriguez@example.com",
+    "days_since_contact": 27,
+    "status": "overdue",
+    "tags": ["neighbor", "close friend"],
+    "bio": "Lives nearby and always joins for coffee and movie nights.",
+    "goal": 21,
+    "next_due_date": "2026-05-02"
+  },
+  {
+    "id": 4,
+    "name": "Michael Chen",
+    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "email": "michael.chen@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["gaming", "online friend"],
+    "bio": "Met through an online gaming community and became close friends.",
+    "goal": 14,
+    "next_due_date": "2026-05-20"
+  },
+  {
+    "id": 5,
+    "name": "Aisha Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "aisha.rahman@example.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["school", "study partner"],
+    "bio": "We studied together in high school and still share book recommendations.",
+    "goal": 15,
+    "next_due_date": "2026-05-12"
+  },
+  {
+    "id": 6,
+    "name": "James Walker",
+    "picture": "https://randomuser.me/api/portraits/men/41.jpg",
+    "email": "james.walker@example.com",
+    "days_since_contact": 40,
+    "status": "overdue",
+    "tags": ["travel", "photography"],
+    "bio": "Backpacking friend who loves photography and outdoor adventures.",
+    "goal": 30,
+    "next_due_date": "2026-04-28"
+  },
+  {
+    "id": 7,
+    "name": "Nina Patel",
+    "picture": "https://randomuser.me/api/portraits/women/57.jpg",
+    "email": "nina.patel@example.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["startup", "mentor"],
+    "bio": "Entrepreneur friend who gives great career and business advice.",
+    "goal": 14,
+    "next_due_date": "2026-05-15"
+  },
+  {
+    "id": 8,
+    "name": "Lucas Bennett",
+    "picture": "https://randomuser.me/api/portraits/men/52.jpg",
+    "email": "lucas.bennett@example.com",
+    "days_since_contact": 16,
+    "status": "almost due",
+    "tags": ["music", "bandmate"],
+    "bio": "Played in a local band together for three years during college.",
+    "goal": 14,
+    "next_due_date": "2026-05-10"
+  }
+]
