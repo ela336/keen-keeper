@@ -10,6 +10,8 @@ import Frienddetails from './frienddetails/Frienddetails.jsx';
 import Timeline from './timeline/Timeline.jsx';
 import Status from './status/Status.jsx';
 import Friendcontext from './Context/Friendcontext.jsx';
+import { ToastContainer, toast } from 'react-toastify';
+import Errorpage from './errorpage/Errorpage.jsx';
 
 
 const router = createBrowserRouter([
@@ -17,13 +19,15 @@ const router = createBrowserRouter([
     path: "/",
     Component: Mainlayout,
     children: [
-      { index: true, Component:Home },
+      { index: true, Component:Home 
+      },
       { path: "/details/:id", Component:Frienddetails},
       { path: "timeline", Component:Timeline},
       { path: "status", Component:Status},
       
      
     ],
+    errorElement:<Errorpage/>
   },
 ]);
 
@@ -31,6 +35,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Friendcontext>
       <RouterProvider router={router} />
+      <ToastContainer />
     </Friendcontext>
      
   </StrictMode>,

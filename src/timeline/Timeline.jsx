@@ -44,7 +44,7 @@ const Timeline = () => {
             </div>
             <div>
         <p>
-          <span className='font-bold'>{item.action}</span>
+          <span className='font-bold'>{item.action} </span>
           with {item.name}
         </p>
 
@@ -62,7 +62,7 @@ const Timeline = () => {
             </div>
             <div>
         <p>
-          <span className='font-bold'>{item.action}</span>
+          <span className='font-bold'>{item.action} </span>
           with {item.name}
         </p>
 
@@ -78,7 +78,7 @@ const Timeline = () => {
              </div>
              <div>
         <p>
-          <span className='font-bold'>{item.action}</span>
+          <span className='font-bold'>{item.action} </span>
           with {item.name}
         </p>
 
