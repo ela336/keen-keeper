@@ -88,8 +88,32 @@ const Frienddetails = () => {
                             <IoCallOutline className='w-xxl' />Call</button>
 
 
-                        <button className='btn bg-[#F8FAFC] w-52 h-22 shadow-md text-[20px] font-medium flex flex-col' onClick={() => { setActivity([...activity, { name: expectedFriend.name, action: 'Text' }]); toast.success('Text activity added!'); }} ><IoMdText className='w-xxl' />Text</button>
-                        <button className='btn bg-[#F8FAFC] w-52 h-22 shadow-md text-[20px] font-medium flex flex-col' onClick={() => { setActivity([...activity, { name: expectedFriend.name, action: 'Video' }]); toast.success('Video activity added!'); }}  ><CiVideoOn className='w-xxl' />Video</button>
+                      
+
+
+                        <button className='btn bg-[#F8FAFC] w-52 h-22 shadow-md text-[20px] font-medium flex flex-col'
+                         onClick={() =>{
+                                setActivity(prev => [
+                                    ...prev,
+                                    {
+                                        name: expectedFriend.name,
+                                        action: 'Text'
+                                    }
+                                ]);
+                                toast.success('Text activity added!');
+                            }} ><IoMdText className='w-xxl' />Text</button>
+
+                        <button className='btn bg-[#F8FAFC] w-52 h-22 shadow-md text-[20px] font-medium flex flex-col'
+                         onClick={() => { setActivity(prev => [
+                                    ...prev,
+                                    {
+                                        name: expectedFriend.name,
+                                        action: 'Video'
+                                    }
+                                ]);
+                                toast.success('Video activity added!');
+                            }}  ><CiVideoOn className='w-xxl' />Video</button>
+                            
                     </div>
                 </div>
             </div>

@@ -36,34 +36,35 @@ const Cards = () => {
     return (
         <>
             <div className='bg-[#F8FAFC] p-6 '>
-                <div className='flex items-center justify-evenly container mx-auto w-[90%]'>
-                    <div className='bg-white flex flex-col items-center justify-center w-70 py-3 rounded-lg shadow'>
+                <div className=' grid gap-2 grid-cols-2   xl:grid-cols-4  container mx-auto w-[88%]'>
+                    <div className='bg-white flex flex-col items-center justify-center w-full py-3 rounded-lg shadow'>
                         <h3 className='font-semibold text-[32px]'>{friends.length}</h3>
-                        <p className='text-[18px] font-normal text-[#64748B]'>Friends</p>
+                        <p className='text-[18px] font-normal text-[#64748B] text-center'>Friends</p>
                     </div>
 
-                    <div className='bg-white flex flex-col items-center justify-center w-70 py-3 rounded-lg shadow'>
+                    <div className='bg-white flex flex-col items-center justify-center w-full py-3 rounded-lg shadow'>
                         <h3 className='font-semibold text-[32px]'>{friends.filter(friend => friend.status === 'on-track').length}</h3>
-                        <p className='text-[18px] font-normal text-[#64748B]'>On Track</p>
+                        <p className='text-[18px] font-normal text-[#64748B] text-center'>On Track</p>
                     </div>
 
-                    <div className='bg-white flex flex-col items-center justify-center w-70 py-3 rounded-lg shadow'> <h3 className='font-semibold text-[32px]'>6</h3>
-                        <p className='text-[18px] font-normal text-[#64748B]'>Need Attention</p>
+                    <div className='bg-white flex flex-col items-center justify-center w-full py-3 rounded-lg shadow'> <h3 className='font-semibold text-[32px]'>6</h3>
+                        <p className='text-[18px] font-normal text-center text-[#64748B]'>Need Attention</p>
                     </div>
 
-                    <div className='bg-white flex flex-col items-center justify-center w-70 py-3 rounded-lg shadow'> <h3 className='font-semibold text-[32px]'>12</h3>
-                        <p className='text-[18px] font-normal text-[#64748B]'>Interactions This Month</p>
+                    <div className='bg-white flex flex-col items-center justify-center w-full py-3 rounded-lg shadow '> <h3 className='font-semibold text-[32px]'>12</h3>
+                        <p className='text-[18px] font-normal text-center text-[#64748B]'>Interactions This Month</p>
                     </div>
                 </div>
                 <hr className='mt-10 mx-auto w-[90%] text-[#c0c4c9]'></hr>
             </div>
+
             <div className='bg-[#F8FAFC] '>
                 <h2 className='font-semibold text-[24px] ml-20 mb-4'>Your Friends</h2>
                 {loading ? <div className="flex justify-center items-center py-10">
                     <HashLoader size={60} color="#244D3F" />
-                </div> : <div className='grid grid-cols-4  gap-4 container mx-auto w-[88%] pb-16'>
+                </div> : <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4   gap-4 container mx-auto w-[88%] pb-16'>
                     {friends.map((friend, index) => (
-                        <Link to={`/details/${friend.id}`} key={index} className='bg-white px-4 py-8 rounded-lg shadow-lg flex flex-col items-center  '>
+                        <Link to={`/details/${friend.id}`} key={index} className='bg-white px-4 py-8 rounded-lg shadow-lg flex flex-col items-center w-full '>
                             <img src={friend.picture} alt={friend.name} className='w-20 h-20 rounded-full' />
 
                             <h3 className='font-semibold text-[20px] '>{friend.name}</h3>

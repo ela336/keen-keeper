@@ -15,7 +15,7 @@ const Footer = () => {
                     <div className='bg-white w-10 h-10 rounded-full flex justify-center items-center'><FaFacebookSquare /></div>
                     <div className='bg-white w-10 h-10 rounded-full flex justify-center items-center'><FaLinkedin /></div>
                 </div>
-                <div className='flex items-center justify-between mt-4'>
+                <div className='flex flex-col md:flex-row items-center justify-between mt-4 '>
                     <p className='text-[#eef0f5]'>© 2026 KeenKeeper. All rights reserved.</p>
                     <div className='flex items-center justify-between gap-4'>
                         <span className='text-[#eef0f5]'>Privacy Policy </span>
