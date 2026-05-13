@@ -28,10 +28,10 @@ const Frienddetails = () => {
 
 
     return (
-        <div className='bg-[#F8FAFC] px-35 py-10'>
+        <div className='bg-[#F8FAFC] px-2 md:px-35  py-2 md:py-10'>
 
             <div className=' grid grid-rows-7 grid-cols-1 lg:grid-cols-5 gap-3'>
-                <div className='bg-white row-span-1 lg:row-span-4 col-span-1 lg:col-span-2 shadow-lg text-center rounded-lg py-9 flex flex-col items-center justify-center'>
+                <div className=' bg-white row-span-1 lg:row-span-4 col-span-1 lg:col-span-2 shadow-lg text-center rounded-lg py-9 flex flex-col items-center justify-center'>
                     <img src={expectedFriend.picture} alt={expectedFriend.name} className='w-20 h-20 rounded-full' />
                     <h3 className='font-bold text-[20px] '>{expectedFriend.name}</h3>
 
@@ -73,8 +73,8 @@ const Frienddetails = () => {
                 </div>
                 <div className=' rounded-btn col-span-1 lg:col-span-3 row-span-1 lg:row-span-3 bg-white shadow-lg p-3 '>
                     <h2 className=' text-[20px] font-medium mb-3 '>Quick Check-In</h2>
-                    <div className='flex flex-col md:flex-row gap-3 md:gap-1 place-items-center justify-around'>
-                        <button className='btn bg-[#F8FAFC] w-30 xl:w-40 h-22 shadow-md text-[20px] font-medium flex flex-col'
+                    <div className='flex gap-3 md:gap-1 place-items-center justify-around'>
+                        <button className='btn bg-[#F8FAFC] w-23 sm:w-30 xl:w-40 h-22 shadow-md text-[20px] font-medium flex flex-col'
                             onClick={() => {
                                 setActivity(prev => [
                                     ...prev,
@@ -91,7 +91,7 @@ const Frienddetails = () => {
                       
 
 
-                        <button className='btn bg-[#F8FAFC] w-30 xl:w-40 h-22 shadow-md text-[20px] font-medium flex flex-col'
+                        <button className='btn bg-[#F8FAFC] w-23 sm:w-30 xl:w-40 h-22 shadow-md text-[20px] font-medium flex flex-col'
                          onClick={() =>{
                                 setActivity(prev => [
                                     ...prev,
@@ -103,7 +103,7 @@ const Frienddetails = () => {
                                 toast.success('Text activity added!');
                             }} ><IoMdText className='w-xxl' />Text</button>
 
-                        <button className='btn bg-[#F8FAFC] w-30 xl:w-40 h-22 shadow-md text-[20px] font-medium flex flex-col'
+                        <button className='btn bg-[#F8FAFC] w-23 sm:w-30 xl:w-40 h-22 shadow-md text-[20px] font-medium flex flex-col'
                          onClick={() => { setActivity(prev => [
                                     ...prev,
                                     {
