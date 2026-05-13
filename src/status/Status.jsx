@@ -24,10 +24,10 @@ const Status = () => {
     <>
     
       <div className='bg-[#F8FAFC] p-7'>
-        <h2 className='text-3xl font-bold ml-63' >Friendship Analytics</h2>
+        <h2 className='text-3xl font-bold text-center' >Friendship Analytics</h2>
         {activity.length ==0 ?<div className='text-center my-4 text-[20px] text-black-300  bg-white p-4 shadow rounded-lg  border-[#a6acb1]  w-[65%] container mx-auto'>No interaction logged in</div>:
-        <div className='my-4 flex flex-col p-7  justify-center bg-white rounded-lg shadow-md w-[65%] container mx-auto '>
-          <h3 className='text-lg font-semibold'>By Interaction Type </h3>
+        <div className='my-4 flex flex-col p-7   justify-center bg-white rounded-lg shadow-md w-[60%] sm:w-[65%] container mx-auto '>
+          <h3 className='text-sm sm:text-lg font-semibold'>By Interaction Type </h3>
 
 
 

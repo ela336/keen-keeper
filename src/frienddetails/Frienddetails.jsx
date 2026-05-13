@@ -30,8 +30,8 @@ const Frienddetails = () => {
     return (
         <div className='bg-[#F8FAFC] px-35 py-10'>
 
-            <div className=' grid grid-rows-7 grid-cols-5 gap-3'>
-                <div className='bg-white row-span-4 col-span-2 shadow-lg text-center rounded-lg py-9 flex flex-col items-center justify-center'>
+            <div className=' grid grid-rows-7 grid-cols-1 lg:grid-cols-5 gap-3'>
+                <div className='bg-white row-span-1 lg:row-span-4 col-span-1 lg:col-span-2 shadow-lg text-center rounded-lg py-9 flex flex-col items-center justify-center'>
                     <img src={expectedFriend.picture} alt={expectedFriend.name} className='w-20 h-20 rounded-full' />
                     <h3 className='font-bold text-[20px] '>{expectedFriend.name}</h3>
 
@@ -46,35 +46,35 @@ const Frienddetails = () => {
                     <p className='text-[#64748B] font-medium text-[16px]'>"{expectedFriend.bio}"</p>
                     <p className='text-[#64748B] mt-1 text-[14px]'>Preferred: {expectedFriend.email}</p>
                 </div>
-                <div className='col-span-1 row-span-2 bg-white shadow-lg text-center rounded-btn flex flex-col items-center justify-center'>
+                <div className='col-span-1 row-span-1 lg:row-span-2 bg-white shadow-lg text-center rounded-btn flex flex-col items-center justify-center'>
                     <h2 className='font-semibold text-[30px]'>{expectedFriend.days_since_contact}</h2>
                     <p className='text-[18px] text-[#64748B]'>Day Since Contact</p>
                 </div>
 
-                <div className='col-span-1 row-span-2 bg-white shadow-lg text-center rounded-btn flex flex-col items-center justify-center'>
+                <div className='col-span-1 row-span-1 lg:row-span-2 bg-white shadow-lg text-center rounded-btn flex flex-col items-center justify-center'>
                     <h2 className='font-semibold text-[30px]'>{expectedFriend.goal}</h2>
                     <p className='text-[18px] text-[#64748B]'>Goal(Days)</p>
                 </div>
-                <div className='col-span-1 row-span-2 bg-white shadow-lg text-center rounded-btn flex flex-col items-center justify-center'>
+                <div className='col-span-1 row-span-1 lg:row-span-2 bg-white shadow-lg text-center rounded-btn flex flex-col items-center justify-center'>
                     <h2 className='font-semibold text-[30px]'>{expectedFriend.next_due_date}</h2>
                     <p className='text-[18px] text-[#64748B]'>Next Due</p>
                 </div>
-                <div className=' rounded-btn col-span-3 row-span-2 bg-white p-4 flex  justify-between shadow-lg'>
+                <div className=' rounded-btn col-span-1 lg:col-span-3 row-span-1 lg:row-span-2 bg-white p-4 flex  justify-between shadow-lg'>
                     <div className='flex flex-col justify-center justify-items-center'>
                         <h2 className='font-semibold text-[20px]'>Relationship Goal</h2>
                         <p className='text-[16px] text-[#64748B]'>Connect every <span className='font-bold text-black'>{expectedFriend.goal}  days </span></p>
                     </div>
                     <button className='btn '>Edit</button>
                 </div>
-                <div className='row-span-3 col-span-2 bg-[#F8FAFC] space-y-6 '>
+                <div className='row-span-1 lg:row-span-3 col-span-1 lg:col-span-2 bg-[#F8FAFC] space-y-6 '>
                     <div className=' rounded-btn row-span-1 bg-white shadow-lg font-medium text-[16px] flex items-center justify-center gap-2 p-5 ' ><FaBell />Snooze 2 weeks</div>
                     <div className=' rounded-btn  row-span-1 bg-white shadow-lg font-medium text-[16px] flex items-center justify-center gap-2 p-5' ><FaArchive />Archive</div>
                     <div className=' rounded-btn row-span-1 bg-white shadow-lg font-medium text-[16px] flex items-center justify-center gap-2 p-5 text-red-700' ><MdDelete />Delete</div>
                 </div>
-                <div className=' rounded-btn col-span-3 row-span-3 bg-white shadow-lg p-3 '>
+                <div className=' rounded-btn col-span-1 lg:col-span-3 row-span-1 lg:row-span-3 bg-white shadow-lg p-3 '>
                     <h2 className=' text-[20px] font-medium mb-3 '>Quick Check-In</h2>
-                    <div className='flex place-items-center justify-around'>
-                        <button className='btn bg-[#F8FAFC] w-52 h-22 shadow-md text-[20px] font-medium flex flex-col'
+                    <div className='flex flex-col md:flex-row gap-3 md:gap-1 place-items-center justify-around'>
+                        <button className='btn bg-[#F8FAFC] w-30 xl:w-40 h-22 shadow-md text-[20px] font-medium flex flex-col'
                             onClick={() => {
                                 setActivity(prev => [
                                     ...prev,
@@ -91,7 +91,7 @@ const Frienddetails = () => {
                       
 
 
-                        <button className='btn bg-[#F8FAFC] w-52 h-22 shadow-md text-[20px] font-medium flex flex-col'
+                        <button className='btn bg-[#F8FAFC] w-30 xl:w-40 h-22 shadow-md text-[20px] font-medium flex flex-col'
                          onClick={() =>{
                                 setActivity(prev => [
                                     ...prev,
@@ -103,7 +103,7 @@ const Frienddetails = () => {
                                 toast.success('Text activity added!');
                             }} ><IoMdText className='w-xxl' />Text</button>
 
-                        <button className='btn bg-[#F8FAFC] w-52 h-22 shadow-md text-[20px] font-medium flex flex-col'
+                        <button className='btn bg-[#F8FAFC] w-30 xl:w-40 h-22 shadow-md text-[20px] font-medium flex flex-col'
                          onClick={() => { setActivity(prev => [
                                     ...prev,
                                     {
