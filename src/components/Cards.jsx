@@ -47,7 +47,7 @@ const Cards = () => {
                         <p className='text-[18px] font-normal text-[#64748B] text-center'>On Track</p>
                     </div>
 
-                    <div className='bg-white flex flex-col items-center justify-center w-full py-3 rounded-lg shadow'> <h3 className='font-semibold text-[32px]'>6</h3>
+                    <div className='bg-white flex flex-col items-center justify-center w-full py-3 rounded-lg shadow'> <h3 className='font-semibold text-[32px]'>{friends.filter(friend => friend.status === 'overdue').length}</h3>
                         <p className='text-[18px] font-normal text-center text-[#64748B]'>Need Attention</p>
                     </div>
 
