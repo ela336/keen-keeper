@@ -1,12 +1,35 @@
-# React + Vite
+# Keen Keeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Keen Keeper is a modern React-based communication and activity tracking application. It helps users manage calls, messages, and video interactions while providing visual insights through charts and analytics.
 
-Currently, two official plugins are available:
+## 🚀 Live Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Keen Keeper allows users to:
+- Track communication activities such as calls, texts, and video chats
+- View detailed statistics using interactive charts
+- Manage and monitor friend activity in a clean and responsive interface
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- React Router
+- Context API
+- Tailwind CSS
+- Recharts
+- React Icons
+- Vite
+
+## ✨ Key Features
+
+### 📊 Activity Analytics
+Visualize call, text, and video activity using interactive pie charts and statistics.
+
+### 👥 Friend Activity Tracking
+Monitor each friend's communication history and interaction details.
+
+### 📱 Responsive Design
+Fully responsive user interface that works smoothly on desktop, tablet, and mobile devices.
+
+
+
+
