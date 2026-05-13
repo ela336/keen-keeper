@@ -51,7 +51,7 @@ const Cards = () => {
                         <p className='text-[18px] font-normal text-center text-[#64748B]'>Need Attention</p>
                     </div>
 
-                    <div className='bg-white flex flex-col items-center justify-center w-full py-3 rounded-lg shadow '> <h3 className='font-semibold text-[32px]'>12</h3>
+                    <div className='bg-white flex flex-col items-center justify-center w-full py-3 rounded-lg shadow '> <h3 className='font-semibold text-[32px]'>{friends.filter(friend => friend.days_since_contact <= 30).length}</h3>
                         <p className='text-[18px] font-normal text-center text-[#64748B]'>Interactions This Month</p>
                     </div>
                 </div>
